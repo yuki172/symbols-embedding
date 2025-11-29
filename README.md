@@ -1,12 +1,8 @@
-## What the notebooks contain
+## Instructions to run the code
 
-`run_train` is an example of running the `train.py` script.
+1. Run `pip install -r requirements.txt`
 
-`results` plots training loss and t-SNE plots for different hyperparameter configurations.
-
-`inference` contains the function `retrieve_top_k`, which, given a model and query image, plots the k images having embeddings closest to the query embedding.
-
-Data should be organized like this
+2. Data should be organized like this
 
 ```
 data/
@@ -23,3 +19,11 @@ data/
     ├── image2.png
     └── ...
 ```
+
+## What the notebooks contain
+
+`run_train` is an example of running the `train.py` script.
+
+`results` plots training loss and t-SNE plots for different hyperparameter configurations.
+
+`inference` contains the function `retrieve_top_k`, which, given a model and query image, plots the k images having embeddings closest to the query embedding.

@@ -1,23 +1,10 @@
 ## Instructions to run the code
 
-1. Run `pip install -r requirements.txt`
+1. Install dependencies `pip install -r requirements.txt`
+2. To crop individual symbols from the images in the Roboflow dataset, run `crop.py`. An example can be found in the notebook `run_crop.ipynb`.
 
-2. Data should be organized like this
-
-```
-data/
-├── train/
-│   ├── image1.png
-│   ├── image2.png
-│   └── ...
-├── valid/
-│   ├── image1.png
-│   ├── image2.png
-│   └── ...
-└── test/
-    ├── image1.png
-    ├── image2.png
-    └── ...
+```bash
+python crop.py --json_path="data/original_data/train/_annotations.coco.json" --images_dir="data/original_data/train" --out_dir="data/train"
 ```
 
 ## What the notebooks contain

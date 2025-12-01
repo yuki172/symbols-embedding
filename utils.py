@@ -31,3 +31,7 @@ def generate_embeddings(model, dataloader):
     embeddings = torch.cat(embeddings, 0)
     embeddings = normalize(embeddings)
     return embeddings, filenames
+
+
+def get_label(filename):
+    return filename.split(".")[0].split("_")[-1]

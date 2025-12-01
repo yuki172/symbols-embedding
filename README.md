@@ -14,3 +14,9 @@ python crop.py --json_path="data/original_data/train/_annotations.coco.json" --i
 `results` plots training loss and t-SNE plots for different hyperparameter configurations.
 
 `inference` contains the function `retrieve_top_k`, which, given a model and query image, plots the k images having embeddings closest to the query embedding.
+
+## Examples (top k similar images to query)
+
+![query-1](results_images/query_1764560641.509865.png)
+
+![query-2](results_images/query_1764560643.486007.png)
